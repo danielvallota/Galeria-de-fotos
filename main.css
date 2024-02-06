@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: blue;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 16px rgb(50, 103, 219);
+    padding: 16px 0;
+}
+
+header button {
+    margin-left: 16px;
+    border: none;
+    background-color: green;
+    width: 126px;
+    color: white;
+}
+
+form {
+    background-color: rgb(154, 210, 255);
+    padding: 14px;
+    text-align: center;
+    display: none;/*isso some com o formulário p depois aparecer com jquery*/
+}
+
+#submit {
+    padding: 8px;
+}
+
+h2 {
+    margin-bottom: 16px;
+}
+#reset {
+    padding: 8px;
+    background-color: red;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#endereco-imagem-nova {
+    padding: 8px;
+    text-align: center;
+}
+
+#submit {
+    background-color: green;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 180px;
+    overflow-y: hidden;
+}
+ul li img {
+    width: 100%;
+}
+
+.overlay-imagem-link {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .6s;
+}
+
+.overlay-imagem-link a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-imagem-link {
+    opacity: 1;
+}
